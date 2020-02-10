@@ -39,16 +39,25 @@
     width: 60px;
     height: 60px;
     background: red;
-    transition: scale 4s:
+    transition: 4s:
 }
 .ex-5-square:hover {
-    scale: (2);
+    transform: scale(2);
+}
+.ex-5-square:active {
+    transform: scale(0.5);
 }
 
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+    transition: filter 4s;
 }
-
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+.ex-7-img:hover {
+    filter: sepia(1);
+}
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
